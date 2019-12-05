@@ -1,0 +1,57 @@
+//general
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+.center {
+    width: 1200px;
+    margin: 0 auto;
+}
+.fh {
+    height: 100%;
+}
+.fw {
+    width: 100%;
+}
+.flex {
+    display: flex;
+    &.cent {
+        justify-content: center;
+    }
+    &.fullcent {
+        align-items: center;
+        justify-content: center;
+    }
+    &.sb {
+        justify-content: space-between;
+    }
+    &.sa {
+        justify-content: space-around;
+    }
+    &.dir_column {
+        flex-direction: column;
+    }
+}
+.left {
+    float: left;
+}
+
+.bg-white {
+    background-color: white !important;
+}
+
+
+
+
+//paddings, margins
+.pr20 {
+    padding-right: 20px;
+}
+.mt50 {
+    margin-top: 50px;
+}
+
+
+//parts
+.leftPart {
+    width: 335px;
+}
