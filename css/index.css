@@ -719,4 +719,64 @@ footer {
   color: white;
   margin: 0 10px;
 }
+
+#fancyHolder {
+  position: fixed;
+  z-index: 9;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#fancyHolder i {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 0;
+  color: white;
+  -webkit-transition: .7 all ease;
+  transition: .7 all ease;
+  cursor: pointer;
+}
+
+#fancyHolder img {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  -webkit-transition: 1.7s opacity ease;
+  transition: 1.7s opacity ease;
+}
+
+#fancyHolder.active {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+#fancyHolder.active i {
+  font-size: 30px;
+}
+
+#fancyHolder.active img {
+  opacity: 1;
+  width: auto;
+  height: auto;
+  border: 5px solid white;
+}
 /*# sourceMappingURL=index.css.map */
