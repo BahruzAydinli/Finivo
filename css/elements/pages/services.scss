@@ -1,0 +1,193 @@
+#servicesPage {
+  .servicesPart {
+    .services {
+      .service {
+        text-align: center;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        padding: 10px 2%;
+        width: 28%;
+        margin: 10px 0;
+        p {
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+#servicesPage,
+#worksPage {
+  .sliderPart {
+    height: 380px;
+  }
+}
+
+#worksPage,
+#workPage {
+  .work {
+    padding: 40px 0;
+  }
+}
+#workPage {
+  .textSide {
+    margin-top: -30px;
+  }
+}
+#worksPage {
+  .work {
+    h2 {
+      font-size: 35px;
+    }
+  }
+  .verticalCenter {
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .background-text {
+      top: 35%;
+    }
+  }
+  .button-box {
+    text-align: center;
+    button {
+      background-color: transparent;
+      border: 1px solid $secondary-color;
+      color: $secondary-color;
+      padding: 7px 30px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: 0.6s all ease;
+      &:hover {
+        color: white;
+        background-color: $secondary-color;
+      }
+    }
+  }
+  .leftAbout {
+    .button-box {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  .main-text {
+    max-width: 270px;
+  }
+  .rightAbout {
+    .main-text {
+      max-width: 150px;
+    }
+  }
+  .rightAbout,
+  .leftAbout {
+    img {
+      height: 360px;
+    }
+    .image-background {
+      height: 360px;
+    }
+  }
+}
+
+#contactPage {
+  .contactPart {
+    background-color: $base-color;
+    margin-bottom: -50px;
+    height: 200px;
+    padding-top: 120px;
+  }
+  .part .partHeader h2 {
+    color: white;
+  }
+  .header-part {
+    width: 100%;
+    display: flex;
+    .leftPart {
+      margin-left: calc((100% - 1100px) / 2);
+    }
+    .rightPart {
+      flex: 1;
+      background-color: $base-color;
+      margin-top: -150px;
+      color: white;
+    }
+  }
+  .rightPart {
+    .contact-section {
+      margin-top: 150px;
+      margin-right: 40px;
+      max-width: 300px;
+    }
+  }
+  .contact-section {
+    float: left;
+    .contact-header {
+      color: $secondary-color;
+      border-top: 2px solid $secondary-color;
+      width: 55px;
+      padding-top: 10px;
+      margin-bottom: 20px;
+      h1 {
+        font-size: 14px;
+      }
+    }
+    h2 {
+      padding-top: 10px;
+    }
+  }
+}
+
+#aboutPage {
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    .stat {
+      width: 20%;
+      text-align: center;
+      padding-top: 20px;
+      h1 {
+        color: $secondary-color;
+        font-size: 80px;
+      }
+      h3 {
+        color: $gray-text;
+        font-size: 28px;
+      }
+    }
+  }
+  .personels {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 0 0;
+    .personel {
+      width: 24%;
+      position: relative;
+      img {
+        position: absolute;
+        top: -5%;
+        width: 95%;
+        right: 0;
+        height: 250px;
+      }
+      .bg-box {
+        background-color: $secondary-color;
+        width: 95%;
+        height: 250px;
+      }
+      h2 {
+        color: $base-color;
+        font-size: 30px;
+      }
+      p {
+        span {
+          letter-spacing: -3px;
+        }
+        color: $secondary-color;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: bold;
+      }
+    }
+  }
+}

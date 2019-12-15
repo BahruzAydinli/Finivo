@@ -19,7 +19,7 @@
 }
 .aboutPart {
   .about {
-    width: 49%;
+    width: 48%;
   }
   .leftAbout {
     position: relative;
@@ -37,7 +37,7 @@
       margin-top: 15px;
     }
   }
-  .rightAbout {
+  .rightAbout, .leftAbout {
     position: relative;
     .image-background {
       width: 100%;
@@ -58,6 +58,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     .service {
       width: 31%;
       .row {
@@ -88,7 +89,7 @@
   top: 0;
   z-index: -10;
   h1 {
-    font-size: 85px;
+    font-size: 75px;
     color: #f2f2f2;
   }
 }
@@ -171,7 +172,7 @@ footer {
   .leftSection {
     width: 400px;
     margin-right: 50px;
-    margin-left: calc((100% - 1200px) / 2);
+    margin-left: calc((100% - 1100px) / 2);
     .contactForm {
       width: 100%;
       float: left;
@@ -254,10 +255,10 @@ footer {
   cursor: pointer;
   align-items: center;
   &.left {
-    left: calc((100% - 1200px) / 2);
+    left: calc((100% - 1100px) / 2);
   }
   &.right {
-    right: calc((100% - 1200px) / 2);
+    right: calc((100% - 1100px) / 2);
   }
   .arrowHolder {
     display: flex;
@@ -281,7 +282,7 @@ footer {
   width: 0;
   height: 0;
   opacity: 0;
-  transition: .3s all ease;
+  transition: 0.3s all ease;
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
@@ -292,7 +293,7 @@ footer {
     right: 5%;
     font-size: 0;
     color: white;
-    transition: .7 all ease;
+    transition: 0.7 all ease;
     cursor: pointer;
   }
   img {

@@ -49,8 +49,9 @@ iframe {
 }
 
 .center {
-  width: 1200px;
+  width: 1100px;
   margin: 0 auto;
+  max-width: 94%;
 }
 
 .fh {
@@ -284,7 +285,7 @@ header .langbar i {
 
 .sliderPart .slider_leftPart {
   width: 335px;
-  margin-left: calc((100% - 1200px) / 2);
+  margin-left: calc((100% - 1100px) / 2);
   float: left;
 }
 
@@ -380,7 +381,7 @@ header .langbar i {
 }
 
 .aboutPart .about {
-  width: 49%;
+  width: 48%;
 }
 
 .aboutPart .leftAbout {
@@ -400,17 +401,17 @@ header .langbar i {
   margin-top: 15px;
 }
 
-.aboutPart .rightAbout {
+.aboutPart .rightAbout, .aboutPart .leftAbout {
   position: relative;
 }
 
-.aboutPart .rightAbout .image-background {
+.aboutPart .rightAbout .image-background, .aboutPart .leftAbout .image-background {
   width: 100%;
   height: 400px;
   background-color: #eab543;
 }
 
-.aboutPart .rightAbout img {
+.aboutPart .rightAbout img, .aboutPart .leftAbout img {
   width: 100%;
   height: 400px;
   position: absolute;
@@ -426,6 +427,8 @@ header .langbar i {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .servicesPart .services .service {
@@ -458,7 +461,7 @@ header .langbar i {
 }
 
 .background-text h1 {
-  font-size: 85px;
+  font-size: 75px;
   color: #f2f2f2;
 }
 
@@ -566,7 +569,7 @@ footer {
 .fullSection .leftSection {
   width: 400px;
   margin-right: 50px;
-  margin-left: calc((100% - 1200px) / 2);
+  margin-left: calc((100% - 1100px) / 2);
 }
 
 .fullSection .leftSection .contactForm {
@@ -694,11 +697,11 @@ footer {
 }
 
 .arrow.left {
-  left: calc((100% - 1200px) / 2);
+  left: calc((100% - 1100px) / 2);
 }
 
 .arrow.right {
-  right: calc((100% - 1200px) / 2);
+  right: calc((100% - 1100px) / 2);
 }
 
 .arrow .arrowHolder {
@@ -728,8 +731,8 @@ footer {
   width: 0;
   height: 0;
   opacity: 0;
-  -webkit-transition: .3s all ease;
-  transition: .3s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
   background-color: rgba(0, 0, 0, 0.7);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -748,8 +751,8 @@ footer {
   right: 5%;
   font-size: 0;
   color: white;
-  -webkit-transition: .7 all ease;
-  transition: .7 all ease;
+  -webkit-transition: 0.7 all ease;
+  transition: 0.7 all ease;
   cursor: pointer;
 }
 
@@ -778,5 +781,228 @@ footer {
   width: auto;
   height: auto;
   border: 5px solid white;
+}
+
+#servicesPage .servicesPart .services .service {
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 10px 2%;
+  width: 28%;
+  margin: 10px 0;
+}
+
+#servicesPage .servicesPart .services .service p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#servicesPage .sliderPart,
+#worksPage .sliderPart {
+  height: 380px;
+}
+
+#worksPage .work,
+#workPage .work {
+  padding: 40px 0;
+}
+
+#workPage .textSide {
+  margin-top: -30px;
+}
+
+#worksPage .work h2 {
+  font-size: 35px;
+}
+
+#worksPage .verticalCenter {
+  margin-top: -30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#worksPage .verticalCenter .background-text {
+  top: 35%;
+}
+
+#worksPage .button-box {
+  text-align: center;
+}
+
+#worksPage .button-box button {
+  background-color: transparent;
+  border: 1px solid #EAB543;
+  color: #EAB543;
+  padding: 7px 30px;
+  font-size: 15px;
+  cursor: pointer;
+  -webkit-transition: 0.6s all ease;
+  transition: 0.6s all ease;
+}
+
+#worksPage .button-box button:hover {
+  color: white;
+  background-color: #EAB543;
+}
+
+#worksPage .leftAbout .button-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#worksPage .main-text {
+  max-width: 270px;
+}
+
+#worksPage .rightAbout .main-text {
+  max-width: 150px;
+}
+
+#worksPage .rightAbout img,
+#worksPage .leftAbout img {
+  height: 360px;
+}
+
+#worksPage .rightAbout .image-background,
+#worksPage .leftAbout .image-background {
+  height: 360px;
+}
+
+#contactPage .contactPart {
+  background-color: #6F1E51;
+  margin-bottom: -50px;
+  height: 200px;
+  padding-top: 120px;
+}
+
+#contactPage .part .partHeader h2 {
+  color: white;
+}
+
+#contactPage .header-part {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#contactPage .header-part .leftPart {
+  margin-left: calc((100% - 1100px) / 2);
+}
+
+#contactPage .header-part .rightPart {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #6F1E51;
+  margin-top: -150px;
+  color: white;
+}
+
+#contactPage .rightPart .contact-section {
+  margin-top: 150px;
+  margin-right: 40px;
+  max-width: 300px;
+}
+
+#contactPage .contact-section {
+  float: left;
+}
+
+#contactPage .contact-section .contact-header {
+  color: #EAB543;
+  border-top: 2px solid #EAB543;
+  width: 55px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+#contactPage .contact-section .contact-header h1 {
+  font-size: 14px;
+}
+
+#contactPage .contact-section h2 {
+  padding-top: 10px;
+}
+
+#aboutPage .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#aboutPage .stats .stat {
+  width: 20%;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#aboutPage .stats .stat h1 {
+  color: #EAB543;
+  font-size: 80px;
+}
+
+#aboutPage .stats .stat h3 {
+  color: #ADAEBD;
+  font-size: 28px;
+}
+
+#aboutPage .personels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 40px 0 0 0;
+}
+
+#aboutPage .personels .personel {
+  width: 24%;
+  position: relative;
+}
+
+#aboutPage .personels .personel img {
+  position: absolute;
+  top: -5%;
+  width: 95%;
+  right: 0;
+  height: 250px;
+}
+
+#aboutPage .personels .personel .bg-box {
+  background-color: #EAB543;
+  width: 95%;
+  height: 250px;
+}
+
+#aboutPage .personels .personel h2 {
+  color: #6F1E51;
+  font-size: 30px;
+}
+
+#aboutPage .personels .personel p {
+  color: #EAB543;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#aboutPage .personels .personel p span {
+  letter-spacing: -3px;
 }
 /*# sourceMappingURL=index.css.map */

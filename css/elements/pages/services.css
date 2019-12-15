@@ -1,0 +1,69 @@
+#servicesPage .servicesPart .services .service {
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 10px 2%;
+  width: 28%;
+  margin: 10px 0;
+}
+
+#servicesPage .servicesPart .services .service p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#servicesPage .sliderPart,
+#worksPage .sliderPart {
+  height: 380px;
+}
+
+#worksPage .work {
+  padding: 40px 0;
+}
+
+#worksPage .verticalCenter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#worksPage .verticalCenter .background-text {
+  top: 35%;
+}
+
+#worksPage .button-box {
+  text-align: center;
+}
+
+#worksPage .button-box button {
+  background-color: transparent;
+  border: 1px solid #eab543;
+  color: #eab543;
+  padding: 7px 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#worksPage .leftAbout .button-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#worksPage .main-text {
+  max-width: 230px;
+}
+
+#worksPage .rightAbout .main-text {
+  max-width: 150px;
+}
+/*# sourceMappingURL=services.css.map */

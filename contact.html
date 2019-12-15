@@ -1,0 +1,218 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Bahruz Aydinli" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="center flex fh">
+        <div class="leftPart f_logo fh left flex dir_column cent">
+          <img src="assets/logo.png" />
+        </div>
+        <div class="navbar left">
+          <div class="navbar_inner">
+            <ul>
+              <li class="active"><a href="./index.html">Ana səhifə</a></li>
+              <li><a href="./services.html">Xidmətlərimiz</a></li>
+              <li><a href="./about.html">Haqqımızda</a></li>
+              <li><a href="./contact.html">Əlaqə</a></li>
+            </ul>
+          </div>
+        </div>
+        <div onclick="openLangOptions()" class="langbar flex left fullcent">
+          <p id="selectedLang">AZ</p>
+          <i class="fa fa-chevron-down"></i>
+          <ul id="langOptions">
+            <li class="active" onclick="changeLang(2)"><a href="#">EN</a></li>
+            <li class="active" onclick="changeLang(3)"><a href="#">RU</a></li>
+            <li onclick="changeLang(1)"><a href="#">AZ</a></li>
+            <li onclick="changeLang(3)"><a href="#">RU</a></li>
+            <li onclick="changeLang(1)"><a href="#">AZ</a></li>
+            <li onclick="changeLang(2)"><a href="#">EN</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main id="contactPage">
+      <div class="contactPart part">
+        <div class="partHeader">
+          <div class="header-part">
+            <div class="leftPart">
+              <div class="contact-section">
+                <div class="contact-header">
+                  <h1>ƏLAQƏ</h1>
+                </div>
+                <h2>
+                  Suallarınızı <br />
+                  bizə ünvanlayın.
+                </h2>
+              </div>
+            </div>
+            <div class="rightPart">
+              <div class="contact-section">
+                <div class="contact-header">
+                  <h1>TELEFON</h1>
+                </div>
+                <div class="contact-text">
+                  <p>+994 12 496 30 23</p>
+                  <p>+994 55 201 68 51</p>
+                  <p>+994 50 556 75 76</p>
+                </div>
+              </div>
+              <div class="contact-section">
+                <div class="contact-header">
+                  <h1>EMAIL</h1>
+                </div>
+                <div class="contact-text">
+                  <p>info@finivo.com</p>
+                </div>
+              </div>
+              <div class="contact-section">
+                <div class="contact-header">
+                  <h1>ÜNVAN</h1>
+                </div>
+                <div class="contact-text">
+                  <p>
+                    Bakı şəh., Nəsimi ray., Xətai pr. 34, "Luxen Plaza" biznes
+                    mərkəzi, AZ1008.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="fullSection mt50">
+        <div class="leftSection">
+          <div class="contactForm">
+            <div class="form-group">
+              <label>Ad Soyad:</label>
+              <input placeholder="Ad Soyad" type="text" />
+            </div>
+            <div class="form-group">
+              <label>E-mail:</label>
+              <input placeholder="E-mail adresiniz" type="text" />
+            </div>
+            <div class="form-group">
+              <label>Mesajınız:</label>
+              <textarea placeholder="Mesajınızı yazın..."></textarea>
+            </div>
+            <input type="submit" value="Göndər" id="contactSubmit" />
+          </div>
+        </div>
+        <div class="rightSection">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.983900915062!2d101.73730181457599!3d3.0989375977433937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc357fa839cec3%3A0xb8664ad292055710!2sFinivo%20Capital%20Management!5e0!3m2!1sen!2s!4v1575571673807!5m2!1sen!2s"
+            width="100%"
+            height="580"
+            frameborder="0"
+            style="border:0;"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+      </div>
+      <div class="fullSection lastFullSection bg-white">
+        <div class="leftSection">
+          <h4>© 2019 FİNİVO LLC. Bütün hüquqlar qorunur.</h4>
+        </div>
+        <div class="rightSection"></div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    ></script>
+    <script>
+      const dontCloseFancy = () => {
+        event.stopPropagation();
+      };
+      const closeFancy = () => {
+        $("#fancyHolder").removeClass("active");
+      };
+      const showImg = i => {
+        console.log(i);
+        const element = $(`.worksSliders .imgBox:nth-child(${i})>img`);
+        const source = element.attr("src");
+        $("#fancyHolder img").attr("src", source);
+        $("#fancyHolder").addClass("active");
+      };
+
+      const openLangOptions = () => {
+        $("#langOptions").hasClass("active")
+          ? $("#langOptions").removeClass("active")
+          : $("#langOptions").addClass("active");
+      };
+
+      const changeLang = i => {
+        const langs = ["AZ", "EN", "RU"];
+        $("#langOptions .active").removeClass("active");
+        $("#selectedLang").text(langs[i - 1]);
+        let a = 1;
+        i === 2 ? (a = 3) : (a = a);
+        i === 3 ? (a = 5) : (a = a);
+        $(`#langOptions li:nth-child(${a})`).addClass("active");
+        $(`#langOptions li:nth-child(${a + 1})`).addClass("active");
+        openLangOptions(4);
+        event.stopPropagation();
+      };
+      const changePhoto = i => {
+        $(".slideRight img.active").removeClass("active");
+        $(`#slideRight img:nth-child(${i})`).addClass("active");
+        $(".slideDots .slideDot.active").removeClass("active");
+        $(`.slideDots .slideDot:nth-child(${i})`).addClass("active");
+      };
+      $("#worksSlider").slick({
+        centerMode: true,
+        slidesToShow: 6,
+        prevArrow:
+          '<div class="arrow left"><div class="arrowHolder"><img src="assets/fivi/main/left_arrow.png" /><p>Əvvəlki</p></div></div>',
+        nextArrow:
+          '<div class="arrow right"><div class="arrowHolder"><p>Sonrakı</p><img src="assets/fivi/main/right_arrow.png" /></div></div>',
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: "40px",
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: "40px",
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+    </script>
+  </body>
+</html>

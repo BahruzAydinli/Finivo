@@ -1,0 +1,389 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Bahruz Aydinli">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="center flex fh">
+        <div class="leftPart f_logo fh left flex dir_column cent">
+          <img src="assets/logo.png" />
+        </div>
+        <div class="navbar left">
+          <div class="navbar_inner">
+            <ul>
+              <li class="active"><a href="./index.html">Ana səhifə</a></li>
+              <li><a href="./services.html">Xidmətlərimiz</a></li>
+              <li><a href="./about.html">Haqqımızda</a></li>
+              <li><a href="./contact.html">Əlaqə</a></li>
+            </ul>
+          </div>
+        </div>
+        <div onclick="openLangOptions()" class="langbar flex left fullcent">
+          <p id="selectedLang">AZ</p>
+          <i class="fa fa-chevron-down"></i>
+          <ul id="langOptions">
+            <li class="active" onclick="changeLang(2)"><a href="#">EN</a></li>
+            <li class="active" onclick="changeLang(3)"><a href="#">RU</a></li>
+            <li onclick="changeLang(1)"><a href="#">AZ</a></li>
+            <li onclick="changeLang(3)"><a href="#">RU</a></li>
+            <li onclick="changeLang(1)"><a href="#">AZ</a></li>
+            <li onclick="changeLang(2)"><a href="#">EN</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main id="servicesPage">
+      <div class="sliderPart">
+        <div class="slideLeft slider_leftPart">
+          <div class="slideContent">
+            <div class="slideName slideRow">
+              <h4>XİDMƏTLƏRİMİZ</h4>
+            </div>
+            <div class="slideText slideRow">
+              <h2>Sizə təklif etdiklərimiz</h2>
+            </div>
+          </div>
+        </div>
+        <div class="slideRight" id="slideRight">
+          <img class="active" src="assets/cover_photos/main_slider.jpg" />
+          <div class="sliderBottom">
+            <div class="coloredPart"></div>
+          </div>
+        </div>
+      </div>
+      <div class="aboutPart part">
+        <div class="center flex sb">
+          <div class="leftAbout about">
+            <div class="background-text">
+              <h1>Haqqımızda</h1>
+            </div>
+            <div class="main-text">
+              <h2>Xəyallarınızı <br />bizimlə gerçəkləşdirin.</h2>
+              <p>
+                Biz, FİNİVO LLC şirkəti olaraq, fərdi və şirkət sifarişçilərinin
+                tələblərinə əsasən layihələndirmə, memarlıq dizayn və maliyyə
+                konsaltinq xidmətləri göstərməkdəyik. Şirkətimiz 2017-ci ildə
+                rəsmi şəkildə təsis olunmuş və qısa müddətdə bir sıra əsaslı
+                nailliyyətlər əldə etmişdir. Bu müddət ərzində layihələndirmə və
+                dizayn bazarında kifayət qədər tanınaraq yerli biznes liderləri
+                ilə yaxından işləyib və bir sıra tanınmış şirkətlərə öz
+                xidmətlərimizi göstərməkdəyik. Gördüyümüz işlərə paytaxt
+                şəhərində və rayonlarda şadlıq sarayı, fərdi yaşayış evlərinin
+                və məktəb binalarının tam layihələndirilməsi və təmiri kimi iri
+                miqyaslı layihələrin icrası daxildir. Eyni zamanda, çoxlu sayda
+                hüquqi və fiziki şəxslərə maliyyə hesabatlarının aparılması və
+                eləcə də öz biznes və sahibkarlıq imkanlarını inkişaf etdirmək
+                üçün bir sıra konsultinq xidmətlər göstərmişik.
+              </p>
+            </div>
+          </div>
+          <div class="rightAbout about">
+            <div class="image-background"></div>
+            <img src="assets/cover_photos/main_slider.jpg" />
+          </div>
+        </div>
+      </div>
+      <div class="servicesPart part">
+        <div class="center">
+          <div class="partHeader">
+            <div class="header-part">
+              <div class="background-text">
+                <h1>Xidmətlərimiz</h1>
+              </div>
+              <h2>
+                Professional komandamızın yüksək xidmətlərindən yararlanın.
+              </h2>
+            </div>
+            <div class="header-part"></div>
+          </div>
+          <div class="services">
+            <div class="service">
+              <div class="row serviceIcon">
+                <img src="assets/icons/sm/icon_building.png" />
+              </div>
+              <div class="row serviceName">
+                <h3>MEMARLIQ VƏ DİZAYN</h3>
+              </div>
+              <div class="row serviceText">
+                <p>Eskiz layihəsi</p>
+                <p>İşçi layihə</p>
+                <p>3D vizualizasiya</p>
+                <p>Dizayn həlləri</p>
+              </div>
+            </div>
+            <div class="service">
+              <div class="row serviceIcon">
+                <img src="assets/icons/sm/icon_construction.png" />
+              </div>
+              <div class="row serviceName">
+                <h3>KONSTRUKSİYA</h3>
+              </div>
+              <div class="row serviceText">
+                <p>
+                  Konstruksiya həlli
+                </p>
+                <p>
+                  Konstruktiv hesabat
+                </p>
+                <p>
+                  3D görüntü
+                </p>
+                <p>
+                  Rekonstruksiya layihəsi
+                </p>
+                <p>
+                  İşçi layihə
+                </p>
+              </div>
+            </div>
+            <div class="service">
+              <div class="row serviceIcon">
+                <img src="assets/icons/sm/icon_engineer.png" />
+              </div>
+              <div class="row serviceName">
+                <h3>MÜHƏNDİS SİSTEMLƏRİ</h3>
+              </div>
+              <div class="row serviceText">
+                <p>
+                  Su və kanalizasiya layihələri
+                </p>
+                <p>
+                  İstilik təchizatı, ventilyasiya və kondisionerləşdirmə
+                  layihəsi
+                </p>
+                <p>
+                  Rabitə və siqnalizasiya layihəsi
+                </p>
+                <p>
+                  Elektrik təchizatı layihəsi
+                </p>
+              </div>
+            </div>
+            <div class="service">
+              <div class="row serviceIcon">
+                <img src="assets/icons/sm/icon_building.png" />
+              </div>
+              <div class="row serviceName">
+                <h3>MEMARLIQ VƏ DİZAYN</h3>
+              </div>
+              <div class="row serviceText">
+                <p>
+                  Təmir işlərinin faktiki qiymətləndirilməsi Təmir işlərinin
+                  təqvim planının hazırlanması
+                </p>
+                <p>
+                  Təmir işlərinin təşkili layihəsinin hazırlanması
+                </p>
+                <p>
+                  Maliyyə qrafikinin hazırlanması
+                </p>
+              </div>
+            </div>
+            <div class="service">
+              <div class="row serviceIcon">
+                <img src="assets/icons/sm/icon_construction.png" />
+              </div>
+              <div class="row serviceName">
+                <h3>KONSTRUKSİYA</h3>
+              </div>
+              <div class="row serviceText">
+                <p>
+                  Topoqrafik çəkiliş
+                </p>
+                <p>
+                  Geoloji kəşfiyyat
+                </p>
+                <p>
+                  Baş plan
+                </p>
+                <p>
+                  Nişanlanma planı
+                </p>
+                <p>
+                  Abadlaşdırma planı
+                </p>
+              </div>
+            </div>
+            <div class="service">
+              <div class="row serviceIcon">
+                <img src="assets/icons/sm/icon_engineer.png" />
+              </div>
+              <div class="row serviceName">
+                <h3>MÜHƏNDİS SİSTEMLƏRİ</h3>
+              </div>
+              <div class="row serviceText">
+                <p>
+                  Maliyyə konsaltinqi və mühasibat uçotu
+                </p>
+                <p>
+                  Vergi xidmətləri
+                </p>
+                <p>
+                  Audit
+                </p>
+                <p>
+                  Karguzarlıq işinin təşkili
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contactPart part">
+        <div class="center">
+          <div class="partHeader">
+            <div class="header-part">
+              <div class="background-text">
+                <h1>Əlaqə</h1>
+              </div>
+              <h2>
+                Suallarınızı <br />
+                bizə ünvanlayın.
+              </h2>
+            </div>
+            <div class="header-part"></div>
+          </div>
+        </div>
+      </div>
+      <div id="fancyHolder" onclick="closeFancy()">
+        <i onclick="closeFancy()" class="fa fa-close"></i>
+        <img
+          onclick="dontCloseFancy()"
+          src="assets/cover_photos/main_slider.jpg"
+        />
+      </div>
+    </main>
+    <footer>
+      <div class="fullSection mt50">
+        <div class="leftSection">
+          <div class="contactForm">
+            <div class="form-group">
+              <label>Ad Soyad:</label>
+              <input placeholder="Ad Soyad" type="text" />
+            </div>
+            <div class="form-group">
+              <label>E-mail:</label>
+              <input placeholder="E-mail adresiniz" type="text" />
+            </div>
+            <div class="form-group">
+              <label>Mesajınız:</label>
+              <textarea placeholder="Mesajınızı yazın..."></textarea>
+            </div>
+            <input type="submit" value="Göndər" id="contactSubmit" />
+          </div>
+        </div>
+        <div class="rightSection">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.983900915062!2d101.73730181457599!3d3.0989375977433937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc357fa839cec3%3A0xb8664ad292055710!2sFinivo%20Capital%20Management!5e0!3m2!1sen!2s!4v1575571673807!5m2!1sen!2s"
+            width="100%"
+            height="580"
+            frameborder="0"
+            style="border:0;"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+      </div>
+      <div class="fullSection lastFullSection bg-white">
+        <div class="leftSection">
+          <h4>© 2019 FİNİVO LLC. Bütün hüquqlar qorunur.</h4>
+        </div>
+        <div class="rightSection"></div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    ></script>
+    <script>
+      const dontCloseFancy = () => {
+        event.stopPropagation();
+      };
+      const closeFancy = () => {
+        $("#fancyHolder").removeClass("active");
+      };
+      const showImg = i => {
+        console.log(i);
+        const element = $(`.worksSliders .imgBox:nth-child(${i})>img`);
+        const source = element.attr("src");
+        $("#fancyHolder img").attr("src", source);
+        $("#fancyHolder").addClass("active");
+      };
+
+      const openLangOptions = () => {
+        $("#langOptions").hasClass("active")
+          ? $("#langOptions").removeClass("active")
+          : $("#langOptions").addClass("active");
+      };
+
+      const changeLang = i => {
+        const langs = ["AZ", "EN", "RU"];
+        $("#langOptions .active").removeClass("active");
+        $("#selectedLang").text(langs[i - 1]);
+        let a = 1;
+        i === 2 ? (a = 3) : (a = a);
+        i === 3 ? (a = 5) : (a = a);
+        $(`#langOptions li:nth-child(${a})`).addClass("active");
+        $(`#langOptions li:nth-child(${a + 1})`).addClass("active");
+        openLangOptions(4);
+        event.stopPropagation();
+      };
+      const changePhoto = i => {
+        $(".slideRight img.active").removeClass("active");
+        $(`#slideRight img:nth-child(${i})`).addClass("active");
+        $(".slideDots .slideDot.active").removeClass("active");
+        $(`.slideDots .slideDot:nth-child(${i})`).addClass("active");
+      };
+      $("#worksSlider").slick({
+        centerMode: true,
+        slidesToShow: 6,
+        prevArrow:
+          '<div class="arrow left"><div class="arrowHolder"><img src="assets/fivi/main/left_arrow.png" /><p>Əvvəlki</p></div></div>',
+        nextArrow:
+          '<div class="arrow right"><div class="arrowHolder"><p>Sonrakı</p><img src="assets/fivi/main/right_arrow.png" /></div></div>',
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: "40px",
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: "40px",
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+    </script>
+  </body>
+</html>
