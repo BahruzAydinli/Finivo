@@ -152,7 +152,7 @@ header .fixedMenu #langMenu {
   top: 0;
   left: 0;
   background-color: white;
-  width: 80px;
+  width: 90px;
   height: 60px;
 }
 
@@ -1322,16 +1322,16 @@ footer {
     font-size: 13px;
   }
   header {
-    height: 60px;
+    height: 90px;
   }
   header .fixedMenu {
-    top: 60px;
+    top: 90px;
   }
   header .fixedMenu #fixedMenuItems {
-    margin-top: -60px;
+    margin-top: -90px;
   }
   header .miniMenu .menuIcon {
-    width: 60px;
+    width: 90px;
   }
   header .miniMenu .menuIcon img,
   header .miniMenu .menuLogo img {
@@ -1371,7 +1371,7 @@ footer {
   #aboutPage .sliderPart,
   #servicesPage .sliderPart,
   #detailPage .sliderPart {
-    height: 450px;
+    height: 500px;
   }
   .aboutPart {
     margin-top: 40px;
