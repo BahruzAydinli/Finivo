@@ -1,5 +1,12 @@
+$(window).scroll(() => {
+    scrollFunction();
+})
+const scrollFunction = () => {
+    window.pageYOffset > 0 ? $("#fixedMenu").addClass("activeTop") : $("#fixedMenu").removeClass("activeTop");
+}
 const openMenu = () => {
     $("#fixedMenu").toggleClass("active");
+    scrollFunction();
     $("#menuIcon").toggleClass("active");
 }
 const dontCloseFancy = () => {

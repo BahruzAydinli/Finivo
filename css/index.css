@@ -147,6 +147,18 @@ header .fixedMenu {
           justify-content: center;
 }
 
+header .fixedMenu #closeFixedMenu {
+  color: white;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 30px;
+}
+
+header .fixedMenu.activeTop {
+  top: 0;
+}
+
 header .fixedMenu #langMenu {
   position: absolute;
   top: 0;
