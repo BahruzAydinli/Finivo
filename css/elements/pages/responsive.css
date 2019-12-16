@@ -1,0 +1,206 @@
+@media only screen and (max-width: 1200px) {
+  #servicesPage .servicesPart .services .service {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 994px) {
+  #contactPage .contactPart {
+    margin-bottom: -20px;
+    height: unset;
+    padding-top: 40px;
+  }
+  #contactPage .header-part {
+    margin-bottom: -20px;
+  }
+  #contactPage .header-part .rightPart {
+    margin: 0;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #contactPage .contact-section {
+    margin-top: 0 !important;
+    margin-bottom: 20px;
+  }
+  #worksPage .sliderPart,
+  #aboutPage .sliderPart,
+  #servicesPage .sliderPart,
+  #detailPage .sliderPart {
+    height: 450px;
+  }
+  .aboutPart {
+    margin-top: 40px;
+    margin-bottom: -40px;
+  }
+  #servicesPage .servicesPart {
+    margin-top: 50px;
+  }
+  #servicesPage .aboutPart,
+  #aboutPage .aboutPart {
+    margin-top: 20px;
+  }
+  #worksPage .rightAbout img,
+  #worksPage .leftAbout img,
+  #worksPage .rightAbout .image-background,
+  #worksPage .leftAbout .image-background {
+    height: 350px;
+  }
+  #worksPage .work .main-text {
+    max-width: 100%;
+  }
+  #worksPage .work .background-text {
+    top: 0;
+  }
+  #worksPage .button-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    margin-top: 10px;
+    margin-bottom: -15px;
+  }
+  .reverse-on-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+    padding: 0 !important;
+    margin-top: 40px;
+  }
+  .reverse-on-mobile .leftAbout {
+    margin-top: 50px;
+  }
+  .column-on-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  #aboutPage .servicesPart {
+    margin-top: 50px;
+  }
+  #aboutPage .stats {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #aboutPage .stats .stat {
+    width: 48%;
+  }
+  #aboutPage .personels {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: -30px;
+  }
+  #aboutPage .personels .personel {
+    width: 48%;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #contactPage .header-part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contactPage .header-part .rightPart {
+    padding-left: 5%;
+    margin-top: 20px;
+  }
+  #worksPage .button-box button {
+    padding: 7px 25px;
+    font-size: 14px;
+  }
+  #servicesPage .sliderPart .slideContent,
+  #worksPage .sliderPart .slideContent,
+  #aboutPage .sliderPart .slideContent,
+  #detailPage .sliderPart .slideContent {
+    padding: 20px 30px 30px 30px;
+  }
+  #servicesPage .servicesPart .services .service {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #contactPage .contact-text p {
+    color: #a9aaba;
+  }
+  #contactPage .contactPart {
+    background-color: white;
+  }
+  #contactPage .header-part .rightPart {
+    background-color: white;
+  }
+  #contactPage .header-part h1,
+  #contactPage .header-part h2 {
+    color: #a9aaba !important;
+  }
+  #contactPage .header-part .rightPart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #worksPage .rightAbout img,
+  #worksPage .leftAbout img,
+  #worksPage .rightAbout .image-background,
+  #worksPage .leftAbout .image-background {
+    height: 280px;
+  }
+  #worksPage .button-box button {
+    padding: 7px 20px;
+    font-size: 13px;
+  }
+  #worksPage .work h2 {
+    font-size: 24px;
+  }
+  #aboutPage .stats .stat {
+    width: 100%;
+  }
+  #aboutPage .personels .personel {
+    width: 100%;
+  }
+  #aboutPage .personels .personel .bg-box {
+    height: 330px;
+  }
+  #aboutPage .personels .personel img {
+    height: 330px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  #worksPage .rightAbout img,
+  #worksPage .leftAbout img,
+  #worksPage .rightAbout .image-background,
+  #worksPage .leftAbout .image-background {
+    height: 220px;
+  }
+  #aboutPage .personels .personel .bg-box {
+    height: 270px;
+  }
+  #aboutPage .personels .personel img {
+    height: 270px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

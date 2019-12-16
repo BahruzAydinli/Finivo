@@ -21,7 +21,7 @@
 
   <body>
     <header>
-      <div class="center flex fh">
+      <div class="center flex fh mainMenu">
         <div class="leftPart f_logo fh left flex dir_column cent">
           <img src="assets/logo.png" />
         </div>
@@ -48,9 +48,38 @@
           </ul>
         </div>
       </div>
+      <div class="miniMenu">
+        <div onclick="openMenu()" class="menuIcon flex" id="menuIcon">
+          <img src="./assets/menu_lg.png" />
+          <img src="./assets/close_menu_lg.png" />
+        </div onclick="openMenu()">
+        <div class="menuLogo">
+          <img src="./assets/logo_lg.png" />
+        </div>
+      </div>
+      <div id="fixedMenu" class="fixedMenu">
+        <div onclick="openFixedLangOptions()" id="langMenu" class="langbar flex left fullcent">
+          <p id="fixedSelectedLang">AZ</p>
+          <i class="fa fa-chevron-down"></i>
+          <ul id="fixedLangOptions">
+            <li class="active" onclick="changeFixedLang(2)"><a href="#">EN</a></li>
+            <li class="active" onclick="changeFixedLang(3)"><a href="#">RU</a></li>
+            <li onclick="changeFixedLang(1)"><a href="#">AZ</a></li>
+            <li onclick="changeFixedLang(3)"><a href="#">RU</a></li>
+            <li onclick="changeFixedLang(1)"><a href="#">AZ</a></li>
+            <li onclick="changeFixedLang(2)"><a href="#">EN</a></li>
+          </ul>
+        </div>
+        <ul id="fixedMenuItems">
+          <li class="active"><span>---- </span><a href="./index.html">Ana səhifə</a><span> ----</span></li>
+          <li><span>---- </span><a href="./services.html">Xidmətlərimiz</a><span> ----</span></li>
+          <li><span>---- </span><a href="./about.html">Haqqımızda</a><span> ----</span></li>
+          <li><span>---- </span><a href="./contact.html">Əlaqə</a><span> ----</span></li>
+        </ul>
+      </div>
     </header>
     <main id="aboutPage">
-      <div class="sliderPart">
+      <div class="sliderPart responsiveColumn">
         <div class="slideLeft slider_leftPart">
           <div class="slideContent">
             <div class="slideName slideRow">
@@ -221,7 +250,7 @@
       </div>
     </main>
     <footer>
-      <div class="fullSection mt50">
+      <div class="fullSection mt50 responsiveColumn">
         <div class="leftSection">
           <div class="contactForm">
             <div class="form-group">
@@ -267,73 +296,6 @@
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
     ></script>
-    <script>
-      const dontCloseFancy = () => {
-        event.stopPropagation();
-      };
-      const closeFancy = () => {
-        $("#fancyHolder").removeClass("active");
-      };
-      const showImg = i => {
-        console.log(i);
-        const element = $(`.worksSliders .imgBox:nth-child(${i})>img`);
-        const source = element.attr("src");
-        $("#fancyHolder img").attr("src", source);
-        $("#fancyHolder").addClass("active");
-      };
-
-      const openLangOptions = () => {
-        $("#langOptions").hasClass("active")
-          ? $("#langOptions").removeClass("active")
-          : $("#langOptions").addClass("active");
-      };
-
-      const changeLang = i => {
-        const langs = ["AZ", "EN", "RU"];
-        $("#langOptions .active").removeClass("active");
-        $("#selectedLang").text(langs[i - 1]);
-        let a = 1;
-        i === 2 ? (a = 3) : (a = a);
-        i === 3 ? (a = 5) : (a = a);
-        $(`#langOptions li:nth-child(${a})`).addClass("active");
-        $(`#langOptions li:nth-child(${a + 1})`).addClass("active");
-        openLangOptions(4);
-        event.stopPropagation();
-      };
-      const changePhoto = i => {
-        $(".slideRight img.active").removeClass("active");
-        $(`#slideRight img:nth-child(${i})`).addClass("active");
-        $(".slideDots .slideDot.active").removeClass("active");
-        $(`.slideDots .slideDot:nth-child(${i})`).addClass("active");
-      };
-      $("#worksSlider").slick({
-        centerMode: true,
-        slidesToShow: 6,
-        prevArrow:
-          '<div class="arrow left"><div class="arrowHolder"><img src="assets/fivi/main/left_arrow.png" /><p>Əvvəlki</p></div></div>',
-        nextArrow:
-          '<div class="arrow right"><div class="arrowHolder"><p>Sonrakı</p><img src="assets/fivi/main/right_arrow.png" /></div></div>',
-        responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: "40px",
-              slidesToShow: 3
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: "40px",
-              slidesToShow: 1
-            }
-          }
-        ]
-      });
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>

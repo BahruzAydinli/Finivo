@@ -2,6 +2,57 @@
 header {
   height: 105px;
   width: 100%;
+  .fixedMenu {
+    top: 80px;
+    position: fixed;
+    background-color: rgba(111, 29, 80, 0.8);
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0;
+    transition: all 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    #langMenu {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: white;
+      width: 80px;
+      height: 60px;
+    }
+    #fixedMenuItems {
+      width: 90%;
+      margin-top: -80px;
+      li {
+        width: 100%;
+        float: left;
+        text-align: center;
+        color: white;
+        font-size: 25px;
+        margin: 15px 0;
+        &.active {
+          color: $secondary-color;
+          font-weight: bold;
+          a {
+            color: $secondary-color;
+            font-weight: bold;
+          }
+        }
+        span {
+          letter-spacing: -4;
+        }
+        a {
+          margin: 0 15px;
+        }
+      }
+    }
+    &.active {
+      z-index: 1;
+      opacity: 1;
+    }
+  }
   .miniMenu {
     height: 100%;
     .menuIcon {
@@ -9,17 +60,33 @@ header {
       justify-content: center;
       align-items: center;
       width: 100px;
+      transition: all 0.8s ease;
       img {
-        max-width: 90%;
-        max-height: 90%;
+        max-width: 70%;
+        max-height: 70%;
+        &:last-child {
+          display: none;
+        }
+      }
+      &.active {
+        img {
+          &:first-child {
+            display: none;
+          }
+          &:last-child {
+            display: block;
+          }
+        }
       }
     }
     .menuLogo {
       display: flex;
       flex: 1;
       justify-content: center;
+      align-items: center;
       img {
-        max-height: 80px;
+        height: 80px;
+        max-height: 90%;
       }
     }
   }

@@ -6,6 +6,15 @@
   }
 }
 @media only screen and (max-width: 1200px) {
+  #contactPage .leftPart {
+    margin-left: $container-1200-margin !important;
+  }
+  #contactPage .rightPart .contact-section {
+    max-width: 230px;
+  }
+  .background-text {
+    left: 70px;
+  }
   .fullSection .leftSection,
   .sliderPart .slider_leftPart,
   .arrow.left {
@@ -51,6 +60,7 @@
   //   slider
   .sliderPart {
     height: 600px;
+    margin-bottom: 0;
     .slideRight {
       img {
         top: 0;
@@ -80,7 +90,7 @@
     }
     .slideContent {
       width: 100%;
-      padding: 40px 30px;
+      padding: 45px 5% 40px 5%;
     }
   }
 
@@ -110,6 +120,14 @@
   }
 }
 @media only screen and (max-width: 768px) {
+  .lastFullSection {
+    .leftSection {
+      height: 40px;
+    }
+    h4 {
+      font-size: 15px;
+    }
+  }
   .sliderPart {
     height: 500px;
   }
@@ -120,11 +138,21 @@
   }
 }
 @media only screen and (max-width: 576px) {
+  .aboutPart {
+    .rightAbout {
+      img {
+        height: 350px;
+      }
+      .image-background {
+        height: 350px;
+      }
+    }
+  }
   .part {
     .partHeader {
       display: block;
       h2 {
-        font-size: 25px;
+        font-size: 24px;
         padding-top: 20px;
       }
     }
@@ -141,7 +169,7 @@
   .worksPart {
     .main-text {
       h2 {
-        font-size: 25px;
+        font-size: 24px;
       }
     }
   }
@@ -163,6 +191,18 @@
   }
 }
 @media only screen and (max-width: 420px) {
+  .aboutPart {
+    .rightAbout,
+    .leftAbout {
+      img {
+        height: 250px;
+      }
+      .image-background {
+        height: 250px;
+      }
+    }
+  }
+
   // slider
   .sliderPart {
     .slideButton {
@@ -183,15 +223,21 @@
   }
 
   header {
-    height: 50px;
+    height: 60px;
+    .fixedMenu {
+      top: 60px;
+      #fixedMenuItems {
+        margin-top: -60px;
+      }
+    }
     .miniMenu {
       .menuIcon {
-        width: 50px;
+        width: 60px;
       }
       .menuIcon,
       .menuLogo {
         img {
-          height: 50px;
+          height: 60px;
         }
       }
     }

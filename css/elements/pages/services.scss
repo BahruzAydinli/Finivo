@@ -91,6 +91,9 @@
 }
 
 #contactPage {
+  .background-text, .main-text {
+    display: none;
+  }
   .contactPart {
     background-color: $base-color;
     margin-bottom: -50px;

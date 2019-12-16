@@ -1,0 +1,258 @@
+@media only screen and (max-width: 1200px) {
+  #servicesPage {
+    .servicesPart {
+      .services {
+        .service {
+          width: 45%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 994px) {
+  #contactPage {
+    .contactPart {
+      margin-bottom: -20px;
+      height: unset;
+      padding-top: 40px;
+    }
+    .header-part {
+      margin-bottom: -20px;
+      .rightPart {
+        margin: 0;
+        margin-bottom: 40px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+    .contact-section {
+      margin-top: 0 !important;
+      margin-bottom: 20px;
+    }
+  }
+  #worksPage,
+  #aboutPage,
+  #servicesPage,
+  #detailPage {
+    .sliderPart {
+      height: 450px;
+    }
+  }
+  .aboutPart {
+    margin-top: 40px;
+    margin-bottom: -40px;
+  }
+  #servicesPage {
+    .servicesPart {
+      margin-top: 50px;
+    }
+  }
+  #servicesPage,
+  #aboutPage {
+    .aboutPart {
+      margin-top: 20px;
+    }
+  }
+  #worksPage {
+    .rightAbout img,
+    .leftAbout img,
+    .rightAbout .image-background,
+    .leftAbout .image-background {
+      height: 350px;
+    }
+    .work {
+      .main-text {
+        max-width: 100%;
+      }
+      .background-text {
+        top: 0;
+      }
+    }
+    .button-box {
+      display: flex;
+      justify-content: center !important;
+      margin-top: 10px;
+      margin-bottom: -15px;
+    }
+  }
+  .reverse-on-mobile {
+    display: flex;
+    flex-direction: column-reverse !important;
+    padding: 0 !important;
+    margin-top: 40px;
+    .leftAbout {
+      margin-top: 50px;
+    }
+  }
+  .column-on-mobile {
+    display: flex;
+    padding: 0 !important;
+    flex-direction: column !important;
+  }
+  #aboutPage {
+    .servicesPart {
+      margin-top: 50px;
+    }
+    .stats {
+      flex-wrap: wrap;
+      .stat {
+        width: 48%;
+      }
+    }
+    .personels {
+      flex-wrap: wrap;
+      margin-bottom: -30px;
+      .personel {
+        width: 48%;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  #contactPage {
+    .header-part {
+      display: flex;
+      flex-direction: column;
+      .rightPart {
+        padding-left: 5%;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  #worksPage {
+    .button-box {
+      button {
+        padding: 7px 25px;
+        font-size: 14px;
+      }
+    }
+  }
+  #servicesPage,
+  #worksPage,
+  #aboutPage,
+  #detailPage {
+    .sliderPart {
+      .slideContent {
+        padding: 20px 30px 30px 30px;
+      }
+    }
+  }
+  #servicesPage {
+    .servicesPart {
+      .services {
+        .service {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 576px) {
+  #contactPage {
+    .background-text,
+    .main-text {
+      display: block;
+    }
+    .hide-on-mobile {
+      display: none;
+    }
+    .contact-text {
+      p {
+        color: #a9aaba;
+      }
+    }
+    .contactPart {
+      background-color: transparent;
+    }
+    .header-part {
+      .rightPart {
+        background-color: transparent;
+      }
+      h1,
+      h2 {
+        color: #a9aaba !important;
+      }
+      .leftPart {
+        h2 {
+          font-size: 30px;
+          color: $base-color !important;
+        }
+      }
+    }
+    .background-text {
+      right: 5%;
+      h1 {
+        color: #f2f2f2 !important;
+      }
+    }
+
+    .header-part {
+      .rightPart {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+  #worksPage {
+    .rightAbout img,
+    .leftAbout img,
+    .rightAbout .image-background,
+    .leftAbout .image-background {
+      height: 280px;
+    }
+    .button-box {
+      button {
+        padding: 7px 20px;
+        font-size: 13px;
+      }
+    }
+    .work {
+      h2 {
+        font-size: 24px;
+      }
+    }
+  }
+  #aboutPage {
+    .stats {
+      .stat {
+        width: 100%;
+      }
+    }
+    .personels {
+      .personel {
+        width: 100%;
+        .bg-box {
+          height: 330px;
+        }
+        img {
+          height: 330px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 420px) {
+  #worksPage {
+    .rightAbout img,
+    .leftAbout img,
+    .rightAbout .image-background,
+    .leftAbout .image-background {
+      height: 220px;
+    }
+  }
+  #aboutPage {
+    .personels {
+      .personel {
+        .bg-box {
+          height: 270px;
+        }
+        img {
+          height: 270px;
+        }
+      }
+    }
+  }
+}
