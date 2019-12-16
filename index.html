@@ -14,7 +14,7 @@
 
 <body>
   <header>
-    <div class="center flex fh">
+    <div class="center flex fh mainMenu">
       <div class="leftPart f_logo fh left flex dir_column cent">
         <img src="assets/logo.png" />
       </div>
@@ -41,9 +41,17 @@
         </ul>
       </div>
     </div>
+    <div class="miniMenu">
+      <div class="menuIcon flex">
+        <img src="./assets/menu_lg.png"/>
+      </div>
+      <div class="menuLogo">
+        <img src="./assets/logo_lg.png"/>
+      </div>
+    </div>
   </header>
   <main>
-    <div class="sliderPart">
+    <div class="sliderPart responsiveColumn">
       <div class="slideLeft slider_leftPart">
         <div class="slideContent">
           <div class="slideName slideRow">
@@ -118,7 +126,6 @@
               Professional komandamızın yüksək xidmətlərindən yararlanın.
             </h2>
           </div>
-          <div class="header-part"></div>
         </div>
         <div class="services">
           <div class="service">
@@ -190,7 +197,6 @@
               bəzi nümunələr.
             </h2>
           </div>
-          <div class="header-part"></div>
         </div>
       </div>
       <div class="worksSliders" id="worksSlider">
@@ -488,7 +494,7 @@
     </div>
   </main>
   <footer>
-    <div class="fullSection mt50">
+    <div class="fullSection mt50 responsiveColumn">
       <div class="leftSection">
         <div class="contactForm">
           <div class="form-group">
@@ -532,7 +538,6 @@
       $("#fancyHolder").removeClass("active");
     }
     const showImg = (i) => {
-      console.log(i);
       const element = $(`.worksSliders .imgBox:nth-child(${i})>img`);
       const source = element.attr("src");
       $("#fancyHolder img").attr("src",source);
@@ -567,21 +572,31 @@
       prevArrow: '<div class="arrow left"><div class="arrowHolder"><img src="assets/fivi/main/left_arrow.png" /><p>Əvvəlki</p></div></div>',
       nextArrow: '<div class="arrow right"><div class="arrowHolder"><p>Sonrakı</p><img src="assets/fivi/main/right_arrow.png" /></div></div>',
       responsive: [
-        {
-          breakpoint: 768,
+      {
+          breakpoint: 1200,
           settings: {
-            arrows: false,
-            centerMode: true,
             centerPadding: "40px",
-            slidesToShow: 3
+            slidesToShow: 4
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 994,
           settings: {
             arrows: false,
-            centerMode: true,
-            centerPadding: "40px",
+            slidesToShow: 3
+          }
+        },
+      {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 576,
+          centerMode: false,
+          centerPadding: "0px",
+          settings: {
             slidesToShow: 1
           }
         }

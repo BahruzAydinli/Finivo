@@ -45,13 +45,13 @@ iframe {
 }
 
 * {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .center {
   width: 1100px;
   margin: 0 auto;
-  max-width: 94%;
+  max-width: 90%;
 }
 
 .fh {
@@ -126,6 +126,42 @@ header {
   width: 100%;
 }
 
+header .miniMenu {
+  height: 100%;
+}
+
+header .miniMenu .menuIcon {
+  background-color: #6f1e51;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+}
+
+header .miniMenu .menuIcon img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+header .miniMenu .menuLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .miniMenu .menuLogo img {
+  max-height: 80px;
+}
+
 header .f_logo img {
   width: 287px;
   height: 86px;
@@ -140,7 +176,7 @@ header .navbar {
 
 header .navbar .navbar_inner {
   height: 75px;
-  background-color: #6F1E51;
+  background-color: #6f1e51;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,12 +203,12 @@ header .navbar li {
 }
 
 header .navbar li.active {
-  border-top: 2px solid #EAB543;
+  border-top: 2px solid #eab543;
   padding-top: 0;
 }
 
 header .navbar li.active a {
-  color: #EAB543;
+  color: #eab543;
 }
 
 header .langbar {
@@ -188,8 +224,8 @@ header .langbar ul {
   background-color: white;
   z-index: 2;
   width: 100%;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   height: 0;
   opacity: 0;
 }
@@ -219,7 +255,7 @@ header .langbar ul li.active {
 }
 
 header .langbar * {
-  color: #6F1E51;
+  color: #6f1e51;
   font-weight: bold;
 }
 
@@ -229,7 +265,7 @@ header .langbar i {
 }
 
 .sliderPart {
-  background-color: #6F1E51;
+  background-color: #6f1e51;
   height: 450px;
   float: left;
   width: 100%;
@@ -255,7 +291,7 @@ header .langbar i {
 }
 
 .sliderPart .slideLeft .slideName {
-  color: #EAB543;
+  color: #eab543;
 }
 
 .sliderPart .slideLeft .slideText {
@@ -267,11 +303,11 @@ header .langbar i {
 }
 
 .sliderPart .slideLeft .slideButton a {
-  border: 1px solid #EAB543;
+  border: 1px solid #eab543;
   background-color: transparent;
   padding: 10px 30px;
   text-align: center;
-  color: #EAB543;
+  color: #eab543;
   text-decoration: none;
   cursor: pointer;
   -webkit-transition: all 0.5s ease;
@@ -280,7 +316,7 @@ header .langbar i {
 
 .sliderPart .slideLeft .slideButton a:hover {
   color: white;
-  background-color: #EAB543;
+  background-color: #eab543;
 }
 
 .sliderPart .slider_leftPart {
@@ -304,7 +340,7 @@ header .langbar i {
 }
 
 .sliderPart .slideRight .sliderBottom .coloredPart {
-  background-color: #6F1E51;
+  background-color: #6f1e51;
   width: 150px;
   height: 100%;
   float: left;
@@ -326,15 +362,15 @@ header .langbar i {
   width: 10px;
   height: 10px;
   background-color: transparent;
-  border: 1px solid #6F1E51;
+  border: 1px solid #6f1e51;
   float: left;
   margin-right: 10px;
   cursor: pointer;
 }
 
 .sliderPart .slideRight .sliderBottom .buttonsPart .slideDots .slideDot.active {
-  background-color: #EAB543;
-  border: 1px solid #EAB543;
+  background-color: #eab543;
+  border: 1px solid #eab543;
   width: 11px;
   height: 11px;
 }
@@ -370,7 +406,7 @@ header .langbar i {
 }
 
 .part .partHeader h2 {
-  color: #6F1E51;
+  color: #6f1e51;
   font-size: 28px;
   padding-top: 40px;
   font-weight: bold;
@@ -389,7 +425,7 @@ header .langbar i {
 }
 
 .aboutPart .main-text h2 {
-  color: #6F1E51;
+  color: #6f1e51;
   font-size: 28px;
   margin-top: 20px;
   font-weight: bold;
@@ -401,18 +437,21 @@ header .langbar i {
   margin-top: 15px;
 }
 
-.aboutPart .rightAbout, .aboutPart .leftAbout {
+.aboutPart .rightAbout,
+.aboutPart .leftAbout {
   position: relative;
 }
 
-.aboutPart .rightAbout .image-background, .aboutPart .leftAbout .image-background {
-  width: 100%;
+.aboutPart .rightAbout .image-background,
+.aboutPart .leftAbout .image-background {
+  width: 95%;
   height: 400px;
   background-color: #eab543;
 }
 
-.aboutPart .rightAbout img, .aboutPart .leftAbout img {
-  width: 100%;
+.aboutPart .rightAbout img,
+.aboutPart .leftAbout img {
+  width: 95%;
   height: 400px;
   position: absolute;
   left: 20px;
@@ -446,11 +485,11 @@ header .langbar i {
 }
 
 .servicesPart .services .service .serviceName h3 {
-  color: #6F1E51;
+  color: #6f1e51;
 }
 
 .servicesPart .services .service .serviceText p {
-  color: #ADAEBD;
+  color: #adaebd;
 }
 
 .background-text {
@@ -540,7 +579,7 @@ header .langbar i {
 }
 
 .worksPart .worksSliders .imgBox .imgBoxHover h5 {
-  color: #EAB543;
+  color: #eab543;
 }
 
 .worksPart .worksSliders .imgBox:hover .imgBoxHover {
@@ -563,7 +602,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #6F1E51;
+  background-color: #6f1e51;
 }
 
 .fullSection .leftSection {
@@ -582,7 +621,7 @@ footer {
   width: 100%;
   border: none;
   height: 50px;
-  background-color: #EAB543;
+  background-color: #eab543;
   color: white;
   text-align: center;
   font-size: 20px;
@@ -602,13 +641,13 @@ footer {
   outline: 0;
   float: left;
   margin-bottom: 5px;
-  color: #EAB543;
+  color: #eab543;
 }
 
 .fullSection .leftSection .contactForm .form-group label:focus,
 .fullSection .leftSection .contactForm .form-group textarea:focus,
 .fullSection .leftSection .contactForm .form-group input:focus {
-  border: 1px solid #EAB543;
+  border: 1px solid #eab543;
 }
 
 .fullSection .leftSection .contactForm .form-group label::-webkit-input-placeholder,
@@ -636,7 +675,7 @@ footer {
 }
 
 .fullSection .leftSection .contactForm .form-group label {
-  color: #EAB543;
+  color: #eab543;
   font-weight: bold;
 }
 
@@ -657,7 +696,7 @@ footer {
 }
 
 .fullSection .rightSection {
-  background-color: #6F1E51;
+  background-color: #6f1e51;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -679,7 +718,7 @@ footer {
 }
 
 .lastFullSection .leftSection h4 {
-  color: #6F1E51;
+  color: #6f1e51;
 }
 
 .arrow {
@@ -762,6 +801,7 @@ footer {
   height: 0;
   -webkit-transition: 1.7s opacity ease;
   transition: 1.7s opacity ease;
+  max-width: 95%;
 }
 
 #fancyHolder.active {
@@ -797,7 +837,7 @@ footer {
 }
 
 #servicesPage .sliderPart,
-#worksPage .sliderPart {
+#worksPage .sliderPart, #aboutPage .sliderPart {
   height: 380px;
 }
 
@@ -838,8 +878,8 @@ footer {
 
 #worksPage .button-box button {
   background-color: transparent;
-  border: 1px solid #EAB543;
-  color: #EAB543;
+  border: 1px solid #eab543;
+  color: #eab543;
   padding: 7px 30px;
   font-size: 15px;
   cursor: pointer;
@@ -849,7 +889,7 @@ footer {
 
 #worksPage .button-box button:hover {
   color: white;
-  background-color: #EAB543;
+  background-color: #eab543;
 }
 
 #worksPage .leftAbout .button-box {
@@ -880,7 +920,7 @@ footer {
 }
 
 #contactPage .contactPart {
-  background-color: #6F1E51;
+  background-color: #6f1e51;
   margin-bottom: -50px;
   height: 200px;
   padding-top: 120px;
@@ -905,7 +945,7 @@ footer {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background-color: #6F1E51;
+  background-color: #6f1e51;
   margin-top: -150px;
   color: white;
 }
@@ -921,8 +961,8 @@ footer {
 }
 
 #contactPage .contact-section .contact-header {
-  color: #EAB543;
-  border-top: 2px solid #EAB543;
+  color: #eab543;
+  border-top: 2px solid #eab543;
   width: 55px;
   padding-top: 10px;
   margin-bottom: 20px;
@@ -952,12 +992,12 @@ footer {
 }
 
 #aboutPage .stats .stat h1 {
-  color: #EAB543;
+  color: #eab543;
   font-size: 80px;
 }
 
 #aboutPage .stats .stat h3 {
-  color: #ADAEBD;
+  color: #adaebd;
   font-size: 28px;
 }
 
@@ -985,18 +1025,18 @@ footer {
 }
 
 #aboutPage .personels .personel .bg-box {
-  background-color: #EAB543;
+  background-color: #eab543;
   width: 95%;
   height: 250px;
 }
 
 #aboutPage .personels .personel h2 {
-  color: #6F1E51;
+  color: #6f1e51;
   font-size: 30px;
 }
 
 #aboutPage .personels .personel p {
-  color: #EAB543;
+  color: #eab543;
   text-transform: uppercase;
   font-size: 13px;
   font-weight: bold;
@@ -1004,5 +1044,170 @@ footer {
 
 #aboutPage .personels .personel p span {
   letter-spacing: -3px;
+}
+
+@media only screen and (min-width: 994px) {
+  header .miniMenu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .fullSection .leftSection,
+  .sliderPart .slider_leftPart,
+  .arrow.left {
+    margin-left: 5%;
+  }
+  .arrow.right {
+    margin-right: 5%;
+  }
+  header .navbar .navbar_inner a {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 994px) {
+  .worksPart {
+    height: 520px;
+  }
+  .responsiveColumn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .fullSection .leftSection {
+    width: 90%;
+  }
+  .lastFullSection .leftSection {
+    width: 100%;
+  }
+  .miniMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .mainMenu {
+    display: none;
+  }
+  header {
+    height: 80px;
+  }
+  .sliderPart {
+    height: 600px;
+  }
+  .sliderPart .slideRight img {
+    top: 0;
+  }
+  .sliderPart .slideRight .sliderBottom {
+    bottom: -40px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sliderPart .slideRight .sliderBottom .buttonsPart {
+    margin-left: 0;
+  }
+  .sliderPart .slideRight .sliderBottom .buttonsPart .slideDot {
+    border-color: white !important;
+  }
+  .sliderPart .slideRight .sliderBottom .buttonsPart .slideDot.active {
+    border-color: #eab543 !important;
+  }
+  .sliderPart .slideRight .sliderBottom .coloredPart {
+    display: none;
+  }
+  .sliderPart .slideLeft {
+    width: 100%;
+    margin-left: 0;
+  }
+  .sliderPart .slideContent {
+    width: 100%;
+    padding: 40px 30px;
+  }
+  .aboutPart .center {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutPart .about {
+    width: 100%;
+  }
+  .aboutPart .about:first-child {
+    margin-bottom: 50px;
+  }
+  .part .header-part {
+    width: 100%;
+  }
+  .servicesPart .services .service {
+    width: 48%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sliderPart {
+    height: 500px;
+  }
+  .background-text h1 {
+    font-size: 65px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .part .partHeader {
+    display: block;
+  }
+  .part .partHeader h2 {
+    font-size: 25px;
+    padding-top: 20px;
+  }
+  .background-text {
+    right: 0;
+    left: unset;
+  }
+  .background-text h1 {
+    font-size: 45px;
+  }
+  .aboutPart .main-text h2,
+  .servicesPart .main-text h2,
+  .worksPart .main-text h2 {
+    font-size: 25px;
+  }
+  .aboutPart .main-text p {
+    font-size: 15px;
+  }
+  .servicesPart .services .service {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .sliderPart .slideButton a {
+    padding: 5px 20px !important;
+  }
+  .sliderPart .slideText h2 {
+    font-size: 18px;
+  }
+  .sliderPart .slideName h4 {
+    font-size: 13px;
+  }
+  header {
+    height: 50px;
+  }
+  header .miniMenu .menuIcon {
+    width: 50px;
+  }
+  header .miniMenu .menuIcon img,
+  header .miniMenu .menuLogo img {
+    height: 50px;
+  }
 }
 /*# sourceMappingURL=index.css.map */

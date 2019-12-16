@@ -17,7 +17,7 @@
 }
 
 #servicesPage,
-#worksPage {
+#worksPage, #aboutPage {
   .sliderPart {
     height: 380px;
   }
@@ -104,7 +104,7 @@
     width: 100%;
     display: flex;
     .leftPart {
-      margin-left: calc((100% - 1100px) / 2);
+      margin-left: $container-margin;
     }
     .rightPart {
       flex: 1;

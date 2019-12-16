@@ -37,15 +37,16 @@
       margin-top: 15px;
     }
   }
-  .rightAbout, .leftAbout {
+  .rightAbout,
+  .leftAbout {
     position: relative;
     .image-background {
-      width: 100%;
+      width: 95%;
       height: 400px;
       background-color: #eab543;
     }
     img {
-      width: 100%;
+      width: 95%;
       height: 400px;
       position: absolute;
       left: 20px;
@@ -172,7 +173,7 @@ footer {
   .leftSection {
     width: 400px;
     margin-right: 50px;
-    margin-left: calc((100% - 1100px) / 2);
+    margin-left: $container-margin;
     .contactForm {
       width: 100%;
       float: left;
@@ -255,10 +256,10 @@ footer {
   cursor: pointer;
   align-items: center;
   &.left {
-    left: calc((100% - 1100px) / 2);
+    left: $container-margin;
   }
   &.right {
-    right: calc((100% - 1100px) / 2);
+    right: $container-margin;
   }
   .arrowHolder {
     display: flex;
@@ -301,6 +302,7 @@ footer {
     width: 0;
     height: 0;
     transition: 1.7s opacity ease;
+    max-width: 95%;
   }
   &.active {
     i {
