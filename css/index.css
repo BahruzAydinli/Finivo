@@ -1212,6 +1212,36 @@ footer {
   }
   .sliderPart .slideRight img {
     top: 0;
+    opacity: 1;
+    position: unset;
+  }
+  .sliderPart .slideRight .slick-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .sliderPart .slideRight .slick-dots li {
+    margin-right: 10px;
+  }
+  .sliderPart .slideRight .slick-dots li button {
+    text-indent: -999;
+    width: 10px;
+    height: 13px;
+    background-color: transparent;
+    border: 1px solid white;
+    float: left;
+    cursor: pointer;
+  }
+  .sliderPart .slideRight .slick-dots .slick-active button {
+    background-color: #eab543;
+    border: 1px solid #eab543;
+    width: 11px;
+    height: 13px;
   }
   .sliderPart .slideRight .sliderBottom {
     bottom: -40px;
@@ -1222,6 +1252,7 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    display: none;
   }
   .sliderPart .slideRight .sliderBottom .buttonsPart {
     margin-left: 0;

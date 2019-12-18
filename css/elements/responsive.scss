@@ -64,12 +64,41 @@
     .slideRight {
       img {
         top: 0;
+        opacity: 1;
+        position: unset;
+      }
+      .slick-dots {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 10px;
+        li {
+          margin-right: 10px;
+          button {
+            text-indent: -999;
+            width: 10px;
+            height: 13px;
+            background-color: transparent;
+            border: 1px solid white;
+            float: left;
+            cursor: pointer;
+          }
+        }
+        .slick-active {
+          button {
+            background-color: $secondary-color;
+            border: 1px solid $secondary-color;
+            width: 11px;
+            height: 13px;
+          }
+        }
       }
       .sliderBottom {
         bottom: -40px;
         width: 100%;
         display: flex;
         justify-content: center;
+        display: none;
         .buttonsPart {
           margin-left: 0;
           .slideDot {

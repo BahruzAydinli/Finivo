@@ -1,3 +1,11 @@
+if (screen.width < 994) {
+    $("#mobileSlider").slick({
+        slidesToShow: 1,
+        dots: true,
+        prevArrow: false,
+        nextArrow: false
+    })
+}
 $(window).scroll(() => {
     scrollFunction();
 })
