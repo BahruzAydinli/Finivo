@@ -12,6 +12,8 @@
       font-size: 28px;
       padding-top: 40px;
       font-weight: bold;
+      word-break: break-word;
+      max-width: 310px;
     }
   }
   .header-part {
@@ -86,6 +88,9 @@
 }
 .testimoniesPart {
   position: relative;
+  #testimonies {
+    display: flex;
+  }
   .testimony {
     padding-right: 20px;
     img {
@@ -111,7 +116,7 @@
   .arrowsBorder {
     position: absolute;
     right: 0;
-    top: 100px;
+    top: 130px;
     width: calc((100% - 700px) / 2);
     border-bottom: 1px solid #ededed;
   }
