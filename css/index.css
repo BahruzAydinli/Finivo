@@ -475,9 +475,6 @@ header .langbar i {
   padding: 20px 0 0 0;
   float: left;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .part .partHeader {
