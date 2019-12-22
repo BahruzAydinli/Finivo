@@ -2,6 +2,8 @@
   padding: 20px 0 0 0;
   float: left;
   width: 100%;
+  display: flex;
+  // here
   .partHeader {
     position: relative;
     display: flex;
@@ -80,6 +82,59 @@
           color: $gray-text;
         }
       }
+    }
+  }
+}
+.testimoniesPart {
+  position: relative;
+  .testimony {
+    padding-right: 20px;
+    img {
+      width: 45px;
+      margin: 15px 0;
+    }
+    .testimony_text {
+      padding-right: 20px;
+      p {
+        color: #B4B5C3;
+      }
+    }
+    .testimony_author {
+      margin-top: 15px;
+      padding-right: 20px;
+      h4 {
+        color: $base-color;
+        text-align: right;
+        font-size: 22px;
+      }
+    }
+  }
+  .arrowsBorder {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    width: calc((100% - 700px) / 2);
+    border-bottom: 1px solid #ededed;
+  }
+  .testimonialArrow {
+    position: absolute;
+    cursor: pointer;
+    top: -30px;
+    right: 0;
+    img,
+    p {
+      float: left;
+    }
+  }
+  .testimonialArrowRight {
+    p {
+      color: $secondary-color;
+    }
+  }
+  .testimonialArrowLeft {
+    right: 100px;
+    p {
+      color: $base-color;
     }
   }
 }

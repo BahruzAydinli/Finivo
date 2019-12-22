@@ -1,21 +1,6 @@
 @font-face {
   font-family: Regular;
-  src: url("./../../finivo/fonts/Cambria_Lite_.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: Bold;
-  src: url("./../../finivo/fonts/Cambria_LiteB_.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: BoldItalic;
-  src: url("./../../finivo/fonts/Cambria_LiteBI_.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: Italic;
-  src: url("./../../finivo/fonts/Cambria_LiteI_.ttf") format("truetype");
+  src: url("./../../finivo/assets/fonts/cambriab.ttf") format("truetype");
 }
 
 body, html, ul {
@@ -45,7 +30,7 @@ iframe {
 }
 
 * {
-  font-family: "Quicksand", sans-serif;
+  font-family: Regular, sans-serif;
 }
 
 .center {
@@ -490,6 +475,9 @@ header .langbar i {
   padding: 20px 0 0 0;
   float: left;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .part .partHeader {
@@ -587,6 +575,70 @@ header .langbar i {
 
 .servicesPart .services .service .serviceText p {
   color: #adaebd;
+}
+
+.testimoniesPart {
+  position: relative;
+}
+
+.testimoniesPart .testimony {
+  padding-right: 20px;
+}
+
+.testimoniesPart .testimony img {
+  width: 45px;
+  margin: 15px 0;
+}
+
+.testimoniesPart .testimony .testimony_text {
+  padding-right: 20px;
+}
+
+.testimoniesPart .testimony .testimony_text p {
+  color: #B4B5C3;
+}
+
+.testimoniesPart .testimony .testimony_author {
+  margin-top: 15px;
+  padding-right: 20px;
+}
+
+.testimoniesPart .testimony .testimony_author h4 {
+  color: #6f1e51;
+  text-align: right;
+  font-size: 22px;
+}
+
+.testimoniesPart .arrowsBorder {
+  position: absolute;
+  right: 0;
+  top: 100px;
+  width: calc((100% - 700px) / 2);
+  border-bottom: 1px solid #ededed;
+}
+
+.testimoniesPart .testimonialArrow {
+  position: absolute;
+  cursor: pointer;
+  top: -30px;
+  right: 0;
+}
+
+.testimoniesPart .testimonialArrow img,
+.testimoniesPart .testimonialArrow p {
+  float: left;
+}
+
+.testimoniesPart .testimonialArrowRight p {
+  color: #eab543;
+}
+
+.testimoniesPart .testimonialArrowLeft {
+  right: 100px;
+}
+
+.testimoniesPart .testimonialArrowLeft p {
+  color: #6f1e51;
 }
 
 .background-text {
@@ -1383,12 +1435,18 @@ footer {
 }
 
 @media only screen and (max-width: 1200px) {
+  .testimoniesPart .arrowsBorder {
+    width: calc(2.5% + 220px);
+  }
   #servicesPage .servicesPart .services .service {
     width: 45%;
   }
 }
 
 @media only screen and (max-width: 994px) {
+  .testimoniesPart .arrowsBorder {
+    display: none;
+  }
   #contactPage .contactPart {
     margin-bottom: -20px;
     height: unset;

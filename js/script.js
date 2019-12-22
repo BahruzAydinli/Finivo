@@ -67,6 +67,30 @@ const changePhoto = (i) => {
     $('.slideDots .slideDot.active').removeClass("active");
     $(`.slideDots .slideDot:nth-child(${i})`).addClass("active");
 }
+$("#testimonies").slick({
+    slidesToShow: 3,
+    prevArrow: '<div class="testimonialArrow testimonialArrowLeft"><img src="assets/icons/arrow-left.png"/><p>Öncəki</p></div>',
+    nextArrow: '<div class="testimonialArrow testimonialArrowRight"><p>Növbəti</p><img src="assets/icons/arrow-right.png"/></div>',
+    responsive: [
+        {
+            breakpoint: 994,
+            settings: {
+                slidesToShow: 2,
+                nextArrow: false,
+                prevArrow: false,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                nextArrow: false,
+                prevArrow: false,
+            }
+        }
+    ]
+})
+
 $("#worksSlider").slick({
     centerMode: true,
     slidesToShow: 6,
